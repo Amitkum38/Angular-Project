@@ -1,0 +1,101 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card-deck mb-3 ">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Registration</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-6 ">
+                                <mat-checkbox name="city" value="New Delhi" [checked]="checkboxshow"
+                                    (change)="checkboxshow = !checkboxshow">Check me!</mat-checkbox>
+
+                                <p *ngIf="checkboxshow">Quickly build an effective pricing table for your potential
+                                    customers
+                                    with this Bootstrap example. It’s built with default Bootstrap components and
+                                    utilities
+                                    with little customization. Quickly build an effective pricing table for your
+                                    potential
+                                    customers with this Bootstrap example. It’s built with default Bootstrap components
+                                    and
+                                    utilities with little customization.</p>
+                            </div>
+                            <div class="col-6 ">
+                                <mat-checkbox name="city" value="m2" [checked]="checkboxshow2"
+                                    (change)="checkboxshow2 = !checkboxshow2  ">Check me!</mat-checkbox>
+
+                                <p *ngIf="checkboxshow2">Quickly build an effective pricing table for your potential
+                                    customers
+                                    with this Bootstrap example. It’s built with default Bootstrap components and
+                                    utilities
+                                    with little customization. Quickly build an effective pricing table for your
+                                    potential
+                                    customers with this Bootstrap example. It’s built with default Bootstrap components
+                                    and
+                                    utilities with little customization.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <mat-radio-group aria-label="Select an Gender" name="Gender" [(ngModel)]="Gendername">
+                                    <mat-radio-button value="Male" color="primary">Male</mat-radio-button>
+                                    <mat-radio-button value="Female">Female</mat-radio-button>
+                                </mat-radio-group>
+                                <p>Gender Name Is : {{Gendername}}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Name</mat-label>
+                                    <input matInput placeholder="Name">
+                                    <mat-hint>Errors appear instantly!</mat-hint>
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Mobile Number</mat-label>
+                                    <input matInput placeholder="Enter Mobile Number" maxlength="10" #zipcode>
+                                    <mat-hint align="end">{{zipcode.value.length}}/10</mat-hint>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <mat-form-field class="input-full-width">
+                                <mat-label>Email</mat-label>
+                                <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                                  Please enter a valid email address
+                                </mat-error>
+                                <mat-error *ngIf="emailFormControl.hasError('required')">
+                                  Email is <strong>required</strong>
+                                </mat-error>
+                              </mat-form-field>
+                            
+                        </div> 
+
+
+                        <div class="col-sm-6">
+                            <mat-form-field class="input-full-width">
+                             <label>Message</label>
+                             <textarea matInput placeholder="Message" #Message maxlength="100"></textarea>
+                             <mat-hint align="start">Leave your Message</mat-hint>
+                             <mat-hint align="end">{{Message.value.length}}/100</mat-hint>
+                            </mat-form-field>
+                        </div>
+
+
+
+                    </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

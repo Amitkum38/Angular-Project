@@ -1,0 +1,25 @@
+.btn-inverse-primary {
+    background-color: rgba(232, 231, 236, 0.63);
+    background-image: none;
+    border-color: rgba(36, 138, 253, 0)
+}
+
+
+.btn-inverse-primary-active {
+    color: #ffffff;
+    background-color: #248afd;
+    border-color: #248afd;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul.active-bun-col li {
+    margin-left: 15px;
+}
+
+
+  

@@ -1,0 +1,7 @@
+.display-block{display: block;}
+.box-page{
+    background: #efefef;
+    padding: 20px;
+    border: 1px #c7c4c4 solid;
+    color: red;
+}

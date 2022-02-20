@@ -1,0 +1,30 @@
+<h4 class="h4">Records Page</h4>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card-deck mb-3">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Add Paragraph</h4>
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                    <label for="pwd">Enter Text</label>
+                    <textarea class="form-control" #todo rows="2"></textarea>
+                   <!-- <input type="text" class="form-control"  #todo placeholder="Enter Text" > -->
+                   
+                  </div>
+                  <button  type="submit" (click)="addrecored(todo.value)" class="btn btn-primary">Submit</button>
+                  
+                    <p *ngFor="let x of todoListArr">{{x}}</p>
+               
+                </div>
+            </div>
+          </div>
+    </div>
+
+</div>
+ 
+
+
+
+    

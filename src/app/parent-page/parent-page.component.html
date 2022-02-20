@@ -1,0 +1,27 @@
+<h4 class="h4">Parent Child Page</h4>
+<!-- DATA FROM CHILD TO  PARENT-->
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Child Page</h4>
+              </div>
+              <div class="card-body">
+                
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>{{dataformchild}}</li>
+                  
+                </ul>
+                <button type="button" class="btn btn-primary">Send Parent</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-lg-6">
+        <app-child-page (sendtoParent)="dataformchild=$event"></app-child-page>
+    </div>
+</div>
+
+

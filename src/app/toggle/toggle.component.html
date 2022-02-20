@@ -1,0 +1,55 @@
+<h4 class="h4">Toggle Page</h4>
+<div class="row">
+      <div class="col-lg-6">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Toggle Page</h4>
+              </div>
+              <div class="card-body">
+                <button type="button" class="btn btn-secondary" (click)="toggleclass()">Page box change</button>
+                <ul [class.box-page]="addmyclasstext"  class="list-unstyled mt-3 mb-4"> Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default  and utilities with little customization. Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization. </ul>
+              </div>
+            </div>
+          </div>
+    </div> 
+
+
+     <div class="col-lg-6">
+      <div class="card-deck mb-3">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Toggle Menu</h4>
+            </div>
+           
+            <div class="card-body">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" (click)="togglemenu()">
+                  Toggle Menu
+                </button>
+                <div class="dropdown-menu"  [class.display-block]="addtogglemenu" >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <ul  class="list-unstyled mt-3 mb-4"> Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default and utilities with little customization. Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization. </ul>
+
+            </div>
+
+          </div>
+        </div>
+  </div>
+
+
+
+
+
+
+
+
+    
+
+   
+</div>
+ 
